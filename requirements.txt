@@ -1,0 +1,5 @@
+chess==1.9.4
+numpy==1.24.1
+opencv_contrib_python==4.5.5.62
+opencv_python==4.8.0.74
+pygame==2.1.2
