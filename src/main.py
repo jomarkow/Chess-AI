@@ -1,14 +1,10 @@
-from game import run_game
+import game
+import pandas as pd
 
-board = [
-    ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
-    ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
-    ['.', '.', '.', '.', '.', '.', '.', '.'],
-    ['.', '.', '.', '.', '.', '.', '.', '.'],
-    ['.', '.', '.', '.', '.', '.', '.', '.'],
-    ['.', '.', '.', '.', '.', '.', '.', '.'],
-    ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
-    ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'],
-]
 
-run_game(board)
+# "NG1-A3"
+
+game.move("NG1-A3")
+game.move("RA1-A7")
+game.move("RA7-A1")
+game.run_game()
