@@ -1,10 +1,6 @@
-import game
-import pandas as pd
+import board
 
-
-# "NG1-A3"
-
-game.move("NG1-A3")
-game.move("RA1-A7")
-game.move("RA7-A1")
-game.run_game()
+# "NG1-F3"
+board.move("pD7-D5")
+board.move("NG1-F3")
+board.run_game()
