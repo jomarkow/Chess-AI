@@ -37,11 +37,12 @@ def move(coor, board = board):
 
         print("Piece not in position")
     else:
-        board[from_col][from_row] = "."
         board[to_col][to_row] = piece
+        board[from_col][from_row] = "."
+        
 
-def run_game(board = board.values):
-            
+def run_game(board = board):
+    board = board.values
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -69,7 +70,7 @@ def run_game(board = board.values):
                 
                 if board[row][col] != ".":
                     image_name = names[board[row][col]]
-                    image = pygame.image.load(f"images\{image_name}.png")
+                    image = pygame.image.load(f"images\pieces\{image_name}.png")
                     screen.blit(image, grid_to_px)
                 
 
