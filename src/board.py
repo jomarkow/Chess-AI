@@ -1,4 +1,4 @@
-from game_config import *
+from config.config import *
 import pandas as pd
 import pygame
 import chess
@@ -21,9 +21,11 @@ board_list = [
  
 board = pd.DataFrame(board_list,columns=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'])
 board.index = [8,7,6,5,4,3,2,1]
-
-screen = init_game()
-
+  
+pygame.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Chess")
+    
 def move(coor, board = board):
 
 
@@ -70,7 +72,7 @@ def run_game(board = board):
                 
                 if board[row][col] != ".":
                     image_name = names[board[row][col]]
-                    image = pygame.image.load(f"images\pieces\{image_name}.png")
+                    image = pygame.image.load(f"data\images\pieces\{image_name}.png")
                     screen.blit(image, grid_to_px)
                 
 
