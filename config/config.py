@@ -2,13 +2,14 @@ import numpy as np
 
 # ------ BOARD -------
 
-SQUARE_SIZE = 80
-MARGIN = 40
-WIDTH = SQUARE_SIZE * 8 + MARGIN
-HEIGHT = WIDTH
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-GREEN = (0, 100, 0)
+class Board:
+    SQUARE_SIZE = 80
+    MARGIN = 40
+    WIDTH = SQUARE_SIZE * 8 + MARGIN
+    HEIGHT = WIDTH
+    WHITE = (255, 255, 255)
+    BLACK = (0, 0, 0)
+    GREEN = (0, 100, 0)
 
 # -------- GRID RECOG -----------
 
@@ -39,3 +40,8 @@ MIN_DISTANCE = 30
 # Images path
 
 BLACK_YELLOW = "../data/images/boards/yellow_black_up.jpeg"
+
+# ---------- CONNECTIVITY -----------
+
+ADDRESS = "Smart_chess"
+PORT = 1883
