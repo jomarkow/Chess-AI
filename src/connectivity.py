@@ -1,4 +1,5 @@
 import paho.mqtt.client as mqtt
+
 from config.config import *
 
 class Broker:
