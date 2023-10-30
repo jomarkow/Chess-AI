@@ -15,7 +15,7 @@ class Board:
 
 # Board
 SIZE = 700
-DISTANCE = SIZE * 2
+DISTANCE = 2 * SIZE
 VERTICAL = 0
 HORIZONTAL = 1
 EDGES = 3
@@ -39,8 +39,11 @@ MIN_DISTANCE = 30
 
 # Images path
 
-BLACK_YELLOW = "../data/images/boards/yellow_black_up.jpeg"
-
+BLACK_YELLOW_UP = "../data/images/boards/yellow_black_up.jpeg"
+BLACK_WHITE_UP = "../data/images/boards/black_white_up.jpeg"
+RED_WHITE_UP = "../data/images/boards/red_white_up.jpeg"
+RED_WHITE_ANGLED = "../data/images/boards/red_white_angled.jpeg"
+RED_WHITE_ANGLED_ROMBO = "../data/images/boards/red_white_angled_rombo.jpeg"
 # ---------- CONNECTIVITY -----------
 
 ADDRESS = "Smart_chess"
