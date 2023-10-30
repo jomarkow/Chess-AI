@@ -7,9 +7,14 @@ def lines(img, lines, color=(0,0,255), size=2):
 	return img
 
 def points(img, points, color=(0,0,255), size=2):
-	"""draw points"""
-	for pt in points: cv2.circle(img,(int(pt[0]),int(pt[1])),size,color,-1)
-	return img
+    
+    i=0
+
+    for i, pt in points:
+        cv2.circle(img,(int(pt[0]),int(pt[1])),size,color,-1)     
+        cv2.putText(img, str(i), (int(pt[0]) + 10, int(pt[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+        i = i + 1
+    return img
 
 def show(images):
     
