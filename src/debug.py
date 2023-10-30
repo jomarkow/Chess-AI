@@ -19,8 +19,8 @@ def show(images):
     cv2.destroyAllWindows()
 
 
-def scatter(dataset, cmap = ''):
-    plt.scatter(dataset[:, 0], dataset[:, 1], cmap=cmap)
+def scatter(dataset, labels = None, cmap = 'viridis'):
+    plt.scatter(dataset[:, 0], dataset[:, 1], c = labels, cmap=cmap)
     plt.xlabel('X-coordinate')
     plt.ylabel('Y-coordinate')
     plt.title('K-Means Clustering')
