@@ -10,7 +10,7 @@ def points(img, points, color=(0,0,255), size=2):
     
     i=0
 
-    for i, pt in points:
+    for pt in points:
         cv2.circle(img,(int(pt[0]),int(pt[1])),size,color,-1)     
         cv2.putText(img, str(i), (int(pt[0]) + 10, int(pt[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
         i = i + 1
